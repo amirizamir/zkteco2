@@ -1,0 +1,5 @@
+{
+  "name": "ZKTeco Data Center Sentinel",
+  "description": "A high-security dashboard for monitoring ZKTeco F22 access control devices, featuring real-time alerts, biometric analytics, and AI-powered security insights.",
+  "requestFramePermissions": []
+}
