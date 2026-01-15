@@ -26,6 +26,7 @@ export interface Device {
   name: string;
   location: string;
   ipAddress: string;
+  port: string;
   model: string;
   status: 'online' | 'offline';
 }
@@ -54,10 +55,17 @@ export interface SecurityAlert {
 }
 
 export interface NotificationSettings {
-  email: string;
+  email: string; // Receiver/Recipient
   notifyOnGranted: boolean;
   notifyOnDenied: boolean;
   enabled: boolean;
+  smtp: {
+    host: string;
+    port: string;
+    user: string;
+    pass: string;
+    from: string; // Sender Email
+  }
 }
 
 export interface DashboardStats {
